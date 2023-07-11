@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn js</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+  </head>
+  <style>
+  </style>
+  <body>
+    <header>
+      <div class="image">Library</div>
+      <div>This Project is A Part Of The Odin Project Assigments</div>
+    </header>
+    <div class="main container">
+      <span class="books-status"></span>
+      <div class="btnadd">
+      <button type="button" class="btnaddadd">+</button></div>
+      <div class="popups">
+        <div class="popup">
+          <div class="overlay"></div>
+          <div class="content">
+            <form id="bookForm" action="./main.js">
+              <div class="first-child">
+              <h2>Add a Book!</h2>
+              <span id="formclose">X</span>
+              </div>
+              <input id="titleInput" type="text" placeholder="Title">
+              <input id="authorInput" type="text" placeholder="Author">
+              <input id="pagesInput" type="text" placeholder="Pages">
+              <span><label for="ReadInput" >Done Read?</label>
+              <input type="checkbox" id="ReadInput"></span>
+              <input id="submit" type="submit">
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="bookshelf"></div>
+    </div>
+    <footer class="footer">
+      <p>
+        Copyright ©
+        <script>
+          document.write(new Date().getFullYear())
+        </script>
+        Abderrahim Mairi
+      </p>
+      <a href="https://github.com/mairiAbderrahim" target="_blank">
+        <i class="fa-brands fa-github" aria-hidden="true"></i></a>
+    </footer>  </body>
+  <script src="/main.js"></script>
+</html>
